@@ -24,10 +24,13 @@ public class tripChallange {
         Scanner scanner = new Scanner(System.in);
         System.out.print("\033[H\033[2J");
         System.out.flush();
+        
         System.out.println("--- psc.Solutions Started ---");
         System.out.println("Trip Destination [Tokyo | New York | Paris]: ");
+        
         String destination = scanner.nextLine();
         System.out.println("Passenger Preference [Fast | Cheap | Less]: ");
+        
         Preference preference = Preference.valueOf(scanner.nextLine().toUpperCase());
         Trip trip = trips.get(destination).get(preference);
         printTripDetails(trip);
@@ -42,11 +45,13 @@ public class tripChallange {
     private static void printTripDetails(Trip trip) {
         System.out.print("\033[H\033[2J");
         System.out.flush();
+        
         System.out.println("=".repeat(25));
         System.out.println("Destination: " + trip.destination);
         System.out.println("Preference: " + trip.preference);
         System.out.println("Duration: " + trip.duration + "hrs");
         System.out.println("Cost: R$" + trip.cost);
+        
         if (trip.scales == 0) {
             System.out.println("Scales: Direct Flight");
         } else {
@@ -62,6 +67,7 @@ class Trip {
     int duration;
     double cost;
     int scales;
+    
     Trip(String destination, Preference preference, int duration, double cost, int scales) {
         this.destination = destination;
         this.preference = preference;
