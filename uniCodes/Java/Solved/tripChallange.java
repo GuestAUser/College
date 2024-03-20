@@ -2,7 +2,7 @@ package Solved;
 
 import java.util.*;
 
-import Solved.tripChallange.Preference; // imported module for item lists;
+import Solved.tripChallange.Preference; // imported module for item selections on map;
 
 public class tripChallange {
     enum Preference {
