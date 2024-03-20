@@ -1,6 +1,6 @@
 *****This challange was really good for practing java*****
 
-**Java is a very intuitive programming language and soon after reading [HashMap Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) i really started creating some plausible code**
+**Java is a very intuitive programming language and soon after reading [HashMap Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) I really started creating some plausible code**
 
 *Also I tested new opensource test kits for programming and project-management on a.i, using projects such as [https://github.com/llvm/llvm-test-suite](https://github.com/llvm/llvm-test-suite) to analyse new ai co-developers, but they still where lacking the sense of optimizing code
 and using good code practices and I eventually refectored the code to have a better overall user-experience, and also using hashmaps, seperating the tripChallange in two parts after the original code was posted using the
