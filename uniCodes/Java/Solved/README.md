@@ -10,5 +10,5 @@ recognizing variable list pattenrs listed bellow on code notes (this was pure AD
   code notes:
         1 - trips.add(new Trip(destination:"Paris", preference: "Fast", duration:7, cost:900.00, scales.1)); //this was the new class list method suggested by the a.i;
         2 - addTrip(trips, new Trip("Tokyo", Preference.LESS, 22, 1100.00, 1)); // this is hashmap defined with ' Map<String, Map<Preference, Trip>> ' (Lk10);
-        3 - The value methods where not guessed corretly by the llvm prediction training ([NOTICE]:review);
+        3 - //The value methods where not guessed corretly by the llvm prediction training ([NOTICE]:review);
 ```
