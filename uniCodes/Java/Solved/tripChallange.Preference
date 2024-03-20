@@ -1,0 +1,15 @@
+class Trip {
+    String destination;
+    tripChallange.Preference preference;
+    int duration;
+    double cost;
+    int scales;
+
+    Trip(String destination, tripChallange.Preference preference, int duration, double cost, int scales) {
+        this.destination = destination;
+        this.preference = preference;
+        this.duration = duration;
+        this.cost = cost;
+        this.scales = scales;
+    }
+}
