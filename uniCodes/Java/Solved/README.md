@@ -4,7 +4,7 @@
 
 *Also I tested new opensource test kits for programming and project-management on a.i, using projects such as [https://github.com/llvm/llvm-test-suite](https://github.com/llvm/llvm-test-suite) to analyse new ai co-developers, but they still where lacking the sense of optimizing code
 and using good code practices and I eventually refectored the code to have a better overall user-experience, and also using hashmaps, seperating the tripChallange in two parts after the original code was posted using the
-a.i assistance on for example, recognizing variable list pattenrs, or other patterns in general that are listed bellow on code notes (this was pure ADHD and for another project i'm developing);*
+a.i assistance on for example, recognizing variable list pattenrs, or other patterns in general that are listed bellow on code notes (this was pure ADHD and for another project i'm developing) [extra-parts];*
 
 ```rust
   code notes:
