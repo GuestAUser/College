@@ -2,8 +2,6 @@ package Solved;
 
 import java.util.*;
 
-import Solved.tripChallange.Preference;
-
 public class tripChallange {
     enum Preference {
         FAST, CHEAP, LESS
