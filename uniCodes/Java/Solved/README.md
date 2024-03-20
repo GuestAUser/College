@@ -2,7 +2,7 @@
 
 **Java is a very intuitive programming language and soon after reading [HashMap Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) i really started creating some plausible code**
 
-*I tested new opensource test kits for programming aids on a.i, using projects such as [](https://github.com/llvm/llvm-test-suite) to analyse new ai co-developers, but they still where lacking the sense of optimizing code
+*I tested new opensource test kits for programming aids on a.i, using projects such as [https://github.com/llvm/llvm-test-suite](https://github.com/llvm/llvm-test-suite) to analyse new ai co-developers, but they still where lacking the sense of optimizing code
 and using good code practices and I eventually refectored the code to use hashmaps, and seperated the tripChallange in two parts after the original code was posted using the a.i assitance on for example,
 recognizing variable list pattenrs listed bellow on code notes (this was pure ADHD);*
 
