@@ -3,8 +3,8 @@
 **Java is a very intuitive programming language and soon after reading [HashMap Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) i really started creating some plausible code**
 
 *Also I tested new opensource test kits for programming and project-management on a.i, using projects such as [https://github.com/llvm/llvm-test-suite](https://github.com/llvm/llvm-test-suite) to analyse new ai co-developers, but they still where lacking the sense of optimizing code
-and using good code practices and I eventually refectored the code to use hashmaps, and seperated the tripChallange in two parts after the original code was posted using the a.i assistance on for example,
-recognizing variable list pattenrs, or other patterns in general that are listed bellow on code notes (this was pure ADHD and for another project i'm developing);*
+and using good code practices and I eventually refectored the code to have a better overall user-experience, and also use hashmaps, and seperated the tripChallange in two parts after the original code was posted using the
+a.i assistance on for example, recognizing variable list pattenrs, or other patterns in general that are listed bellow on code notes (this was pure ADHD and for another project i'm developing);*
 
 ```rust
   code notes:
