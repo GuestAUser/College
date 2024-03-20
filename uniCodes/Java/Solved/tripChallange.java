@@ -31,7 +31,6 @@ public class tripChallange {
         Preference preference = Preference.valueOf(scanner.nextLine().toUpperCase());
         Trip trip = trips.get(destination).get(preference);
         printTripDetails(trip);
-
         scanner.close();
     }
 
