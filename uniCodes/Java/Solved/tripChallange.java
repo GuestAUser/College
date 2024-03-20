@@ -56,18 +56,3 @@ public class tripChallange {
         System.out.println("=".repeat(25));
     }
 }
-
-class Trip {
-    String destination;
-    Preference preference;
-    int duration;
-    double cost;
-    int scales;
-    Trip(String destination, Preference preference, int duration, double cost, int scales) {
-        this.destination = destination;
-        this.preference = preference;
-        this.duration = duration;
-        this.cost = cost;
-        this.scales = scales;
-    }
-}
