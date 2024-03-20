@@ -46,7 +46,7 @@ public class tripChallange {
         System.out.println("Destination: " + trip.destination);
         System.out.println("Preference: " + trip.preference);
         System.out.println("Duration: " + trip.duration + "hrs");
-        System.out.println("Cost: R$" + trip.cost + ".00");
+        System.out.println("Cost: R$" + trip.cost);
         if (trip.scales == 0) {
             System.out.println("Scales: Direct Flight");
         } else {
