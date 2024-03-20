@@ -2,12 +2,13 @@ package Solved;
 
 import java.util.*;
 
-import Solved.tripChallange.Preference; // imported module for item selections on map;
+import Solved.tripChallange.Preference;
 
 public class tripChallange {
     enum Preference {
         FAST, CHEAP, LESS
     }
+
     public static void main(String[] args) {
         Map<String, Map<Preference, Trip>> trips = new HashMap<>();
         addTrip(trips, new Trip("Paris", Preference.FAST, 7, 900.00, 1));
@@ -23,13 +24,10 @@ public class tripChallange {
         Scanner scanner = new Scanner(System.in);
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        
         System.out.println("--- psc.Solutions Started ---");
         System.out.println("Trip Destination [Tokyo | New York | Paris]: ");
-        
         String destination = scanner.nextLine();
         System.out.println("Passenger Preference [Fast | Cheap | Less]: ");
-        
         Preference preference = Preference.valueOf(scanner.nextLine().toUpperCase());
         Trip trip = trips.get(destination).get(preference);
         printTripDetails(trip);
@@ -44,18 +42,18 @@ public class tripChallange {
     private static void printTripDetails(Trip trip) {
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        
         System.out.println("=".repeat(25));
         System.out.println("Destination: " + trip.destination);
         System.out.println("Preference: " + trip.preference);
         System.out.println("Duration: " + trip.duration + "hrs");
-        System.out.println("Cost: R$" + trip.cost);
-        
+        System.out.println("Cost: $" + trip.cost);
+
         if (trip.scales == 0) {
             System.out.println("Scales: Direct Flight");
         } else {
             System.out.println("Scales: " + trip.scales);
         }
+        
         System.out.println("=".repeat(25));
     }
 }
@@ -66,7 +64,6 @@ class Trip {
     int duration;
     double cost;
     int scales;
-    
     Trip(String destination, Preference preference, int duration, double cost, int scales) {
         this.destination = destination;
         this.preference = preference;
