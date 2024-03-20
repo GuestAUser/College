@@ -8,7 +8,6 @@ public class tripChallange {
     enum Preference {
         FAST, CHEAP, LESS
     }
-
     public static void main(String[] args) {
         Map<String, Map<Preference, Trip>> trips = new HashMap<>();
         addTrip(trips, new Trip("Paris", Preference.FAST, 7, 900.00, 1));
