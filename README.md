@@ -47,8 +47,6 @@ Problem Solving
 
 <img width="100%" align="center" src="https://github-profile-trophy.vercel.app/?username=Lk10" />
 
-<img width="50%" align="left" src="https://github-readme-stats.vercel.app/api?username=Lk10&show_icons=true&locale=en" />
-
 <h2 align="left">Connect with Me</h2>
 
 <p align='left'><a href="https://github.com/GuestAUser"><img src="https://raw.githubusercontent.com/ryantusi/Github_Profile_README_Generator/main/src/images/icons/Social/github.svg" width="40" height='40' title="github"/></a><a href="https://www.linkedin.com/in/davi-chaves-azevedo-418685231/"><img src="https://raw.githubusercontent.com/ryantusi/Github_Profile_README_Generator/main/src/images/icons/Social/linked-in-alt.svg" width="40" height='40' title="linked-in-alt"/></a></p>
