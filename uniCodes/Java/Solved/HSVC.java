@@ -4,12 +4,12 @@ public class CalculoRoubo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        int[] dinheiroPessoas = new int[5];
+        int[] dinheiroPessoas = new int[10];
         int totalRoubado = 0;
         boolean checkVerdadeiro = false;
         
-        System.out.println("Digite o dinheiro das 5 pessoas presas:");
-        for (int i = 0; i < 5; i++) {
+        System.out.println("Digite o dinheiro das 10 pessoas presas:");
+        for (int i = 0; i < 10; i++) {
             dinheiroPessoas[i] = scanner.nextInt();
         }
         System.out.println("Digite o dinheiro que o bandido que se entregou roubou:");
