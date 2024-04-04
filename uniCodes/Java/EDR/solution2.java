@@ -15,8 +15,6 @@ public class solution2 {
         } else {
             System.out.println("Valid Registration.");
         }
-
-
         scanner.close();
     }
 }
