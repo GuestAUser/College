@@ -4,7 +4,7 @@ import platform
 class Produto:
     last_id = 0
 
-    def __init__(self, name="Não informado", price=0):
+    def __init__(self, name="Not Informed", price=0):
         Produto.last_id += 1
         self._id = Produto.last_id
         self.name = name
