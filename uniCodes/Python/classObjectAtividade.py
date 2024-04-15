@@ -7,7 +7,8 @@ class Produto:
 
     def __init__(self, name="Not Informed", price=0):
         Produto.last_id += 1
-        self._id = "databaseObject." + str(Produto.last_id)
+        Produto.id_section = "A-"
+        self._id = "databaseObject." + Produto.id_section + str(Produto.last_id)
         self.name = name
         self.price = price if price >= 0 else 0
 
@@ -58,7 +59,6 @@ print("=" * terminal_width + "\n")
 for product in products:
     product.price_change(percent)
     product.show()
-
-print(f"Last id generated: databaseObject.{Produto.last_id}\n")
+print(f"Last id generated: databaseObject.{Produto.id_section}{Produto.last_id}\n")
 
 print("=" * terminal_width + "\n")
