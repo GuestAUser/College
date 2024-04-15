@@ -42,10 +42,8 @@ def clear_screen():
 
 clear_screen()
 products = []
-product_range_track = 0
 for i in range(2):
-    product_range_track += 1
-    name = input(f"Type the product {product_range_track} name: ")
+    name = input(f"Type the product {Produto.last_id+1} name: ")
     price = float(input("Type the product price: "))
     products.append(Produto(name, price))
     print("\n")
