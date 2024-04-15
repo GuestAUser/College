@@ -1,5 +1,6 @@
 from os import system
 import platform
+import shutil
 
 class Produto:
     last_id = 0
@@ -48,10 +49,16 @@ for i in range(2):
     products.append(Produto(name, price))
     print("\n")
 
+terminal_width = shutil.get_terminal_size().columns
 percent = float(input("Readjustment percent: "))
-print("\n")
+
+clear_screen()
+print("=" * terminal_width + "\n")
+
 for product in products:
     product.price_change(percent)
     product.show()
 
 print(f"Last id generated: {Produto.last_id}\n")
+
+print("=" * terminal_width + "\n")
