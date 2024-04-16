@@ -1,5 +1,5 @@
-# Atividade avaliativa feita em aula, código feito em um curto período e por isso talvez esteja um pouco
-# mal implementado.
+# Atividade avaliativa feita em aula, código feito em um curto período e por isso talvez
+# esteja um pouco mal implementado.
 from os import system
 import platform
 import shutil
