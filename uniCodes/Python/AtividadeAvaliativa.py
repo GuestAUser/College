@@ -8,7 +8,7 @@ class Fatura:
     def __init__(self, item_name, item_description, item_buy_count, item_price=0):
         self.item_name = item_name
         self.item_description = item_description
-        # Não deixar os números ficarem negativos; (Constatado na atividade)
+        # Não deixar os números ficarem negativos (Constatado na atividade);
         self.item_buy_count = int(item_buy_count) if int(item_buy_count) > 0 else 0
         self.item_price = int(item_price) if int(item_price) >= 0 else 0.0
 
