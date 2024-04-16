@@ -1,4 +1,4 @@
-# Atividade avaliativa feita em aula, código feito em um curto período, talvez esteja um pouco
+# Atividade avaliativa feita em aula, código feito em um curto período e por isso talvez esteja um pouco
 # mal implementado.
 from os import system
 import platform
