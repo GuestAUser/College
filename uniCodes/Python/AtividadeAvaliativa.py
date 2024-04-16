@@ -63,10 +63,10 @@ if __name__ == "__main__":
     fatura_descriptor = input("Qual vai ser a descricao dele? - > ")
     fatura_quantity = input(f"Qual vai ser a quantidade de {fatura_name} comprado? - > ")
     fatura_price = input(f"Preco do objeto ( {fatura_name} ) - > ")
-
     fatura = Fatura(fatura_name, fatura_descriptor, fatura_quantity, fatura_price)
+    
     clear_screen()
-
+    
     print("=" * terminal_width)
     print(f"Nome do Item: {fatura.item_name}")
     print(f"Descrição do Item: {fatura.item_description}")
