@@ -1,26 +1,35 @@
-class Animal: #Início polimorfismo;
-    def speak(self):
+class Tool:
+    def action(self):
         pass
 
-class Dog(Animal):
-    def speak(self):
-        return "Woof Woof!" #Implementação para o ( Cachorro );
+class Hammer(Tool):
+    def action(self):
+        return "*You have used the Hammer!"
 
-class Cat(Animal):
-    def speak(self):
-        return "\n\nMeow!" #Implementação para o  ( Gato     );
+class Screwdriver(Tool):
+    def action(self):
+        return "You have used the Screwdriver!"
 
-class Cow(Animal):
-    def speak(self):
-        return "\n\nMooo!" #Implementação para a  ( Vaca     );
+class Wrench(Tool):
+    def action(self):
+        return "You have used the Wrench!"
 
-def animal_voice(animal):
-    return animal.speak()  #Função que chama as implementações speak(self[Cow,Cat,Dog]);
+class Toolbox:
+    @staticmethod
+    def get_tool(tool_type):
+        if tool_type == "hammer":
+            return Hammer()
+        elif tool_type == "screwdriver":
+            return Screwdriver()
+        elif tool_type == "wrench":
+            return Wrench()
+        else:
+            return None
 
-dog = Dog()
-cat = Cat()
-cow = Cow()
+tool_type = input("What tool do you want to use? (hammer/screwdriver/wrench): ").lower()
+tool = Toolbox.get_tool(tool_type)
 
-print(animal_voice(dog))
-print(animal_voice(cat))
-print(animal_voice(cow))
+if tool:
+    print(tool.action())
+else:
+    print("Desculpe, essa ferramenta não está disponível.")
