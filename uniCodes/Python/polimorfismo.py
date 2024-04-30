@@ -21,7 +21,7 @@ class Toolbox:
         "wrench": Wrench
     }
 
-    @staticmethod
+    @staticmethod #Not attached to the object lifecycle.
     def get_tool(tool_type):
         return Toolbox.tools.get(tool_type.lower())
 
