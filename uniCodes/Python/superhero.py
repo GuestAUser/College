@@ -87,7 +87,6 @@ class Game():
         for power in villain_powers:
             villain.addSuperpower(power)
         
-        
         #Even if there is more than 4 powers added, the rest will be disqualified on the final result;
             
         self.clear_screen()
