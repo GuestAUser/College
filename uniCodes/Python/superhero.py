@@ -65,27 +65,30 @@ class Game():
         print(" "*20 + "Welcome to the Super vs Villains Game!" + " "*21 + "|")
         print("="*80)
         
-        superhero_name = input("Add the Super Hero name: ")
+        superhero_name = str(input("Add the Super Hero name: "))
         superhero_category = int(input("Add the Super Hero category: "))        
         superhero = Superhero(superhero_name, superhero_category)
         
         self.clear_screen()
-        print("Now add powers for the Super Hero:")
+        print("Now add powers for the Super Hero ( Maximum is '4' ):")
         superhero_powers = self.add_powers()
         for power in superhero_powers:
             superhero.addSuperpower(power)
         
         self.clear_screen()
-        villain_name = input("Add the Super Villain name: ")
+        villain_name = str(input("Add the Super Villain name: "))
         villain_real_name = input("Add the Super Villain real name: ")
         time_in_prison = int(input("Add the Super Villain time in prison: "))
         villain = Villain(villain_name, villain_real_name, time_in_prison)
         
         self.clear_screen()
-        print("Now add powers for the Super Villain:")
+        print("Now add powers for the Super Villain: ( Maximum is '4' )")
         villain_powers = self.add_powers()
         for power in villain_powers:
             villain.addSuperpower(power)
+        
+        
+        #Even if there is more than 4 powers added, the rest will be disqualified on the final result;
             
         self.clear_screen()
         fight = Fight()
