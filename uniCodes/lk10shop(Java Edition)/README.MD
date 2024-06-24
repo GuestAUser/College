@@ -110,3 +110,86 @@ Chatgpt: "Este esboço de requisitos funcionais é baseado no código fornecido 
 ## A.I Vs Eu
 
 Como podemos ver a a.i mesmo sendo fornecida com o própio código do projeto ainda sim faltou nos quesitos de detalhes como o user-experience e organização dos dados, mas ainda sim acho muito útil pelo fato de automatizar diversos processos complicados e acaba virando um facilitador imenso para muitos processos, mas não todos.
+
+## Descrição Textual do Diagrama de Classes do Sistema
+
+O sistema é uma aplicação de gerenciamento de loja virtual, desenvolvida com uma interface de texto utilizando a biblioteca Lanterna. O programa permite que os usuários se registrem, façam login, realizem compras e doações, e gera uma nota fiscal ao final da compra. Abaixo está uma descrição detalhada das classes, propriedades e métodos que compõem o sistema, explicando como elas se relacionam para resolver o problema.
+
+### Classes Principais
+
+1. **Lk10Shop**
+   - **Descrição**: Classe principal do programa que gerencia a lógica da interface de usuário e interações principais.
+   - **Propriedades**:
+     - `logger`: Logger utilizado para registrar atividades do sistema.
+     - `DONATION_FILE`: Nome do arquivo que armazena o total de doações.
+     - `LOGIN_FILE`: Nome do arquivo que armazena informações de login.
+   - **Métodos**:
+     - `displayStartScreen(MultiWindowTextGUI gui)`: Exibe a tela inicial do programa.
+     - `loginAction(MultiWindowTextGUI gui)`: Gerencia o processo de login dos usuários.
+     - `registerAction(MultiWindowTextGUI gui)`: Gerencia o processo de registro de novos usuários.
+     - `saveLoginInfo(String name, String email, String senha)`: Salva as informações de login de um novo usuário.
+     - `loadAllLoginInfo()`: Carrega todas as informações de login dos usuários registrados.
+     - `animateLoginName(MultiWindowTextGUI gui, String name)`: Exibe uma animação de boas-vindas após o login.
+     - `mainInteraction(MultiWindowTextGUI gui, Cliente cliente)`: Gerencia a interação principal, permitindo que o usuário selecione produtos e finalize a compra.
+     - `getDonationAmount(MultiWindowTextGUI gui)`: Solicita ao usuário o valor da doação.
+     - `updateDonationTotal(double amount)`: Atualiza o valor total das doações no arquivo de texto.
+     - `savePurchase(String clientName, String notaFiscal)`: Salva as compras do usuário em um arquivo de log.
+     - `animateNotaFiscal(MultiWindowTextGUI gui, String notaFiscal)`: Exibe a nota fiscal gerada após a compra.
+     - `main(String[] args)`: Método principal que inicializa a aplicação.
+
+2. **Cliente**
+   - **Descrição**: Representa um cliente da loja.
+   - **Propriedades**:
+     - `nome`: Nome do cliente.
+     - `email`: Email do cliente.
+     - `senha`: Senha do cliente.
+     - `pedido`: Instância da classe Pedido que armazena os produtos selecionados pelo cliente.
+   - **Métodos**:
+     - `Cliente(String nome, String email, String senha)`: Construtor da classe Cliente.
+     - `selecionar_produto(Produto produto, int quantidade)`: Adiciona um produto ao pedido do cliente.
+
+3. **Produto**
+   - **Descrição**: Representa um produto disponível na loja.
+   - **Propriedades**:
+     - `nome`: Nome do produto.
+     - `preco`: Preço do produto.
+   - **Métodos**:
+     - `Produto(String nome, double preco)`: Construtor da classe Produto.
+
+4. **Pedido**
+   - **Descrição**: Representa um pedido contendo produtos selecionados por um cliente.
+   - **Propriedades**:
+     - `produtos`: Lista de produtos que compõem o pedido.
+   - **Métodos**:
+     - `adicionar_produto(Produto produto, int quantidade)`: Adiciona produtos à lista de produtos do pedido.
+     - `gerar_nota_fiscal(String clientName)`: Gera a nota fiscal do pedido.
+     - `gerar_nota_fiscal(String clientName, double donation)`: Gera a nota fiscal do pedido, incluindo uma doação.
+
+5. **LoginInfo**
+   - **Descrição**: Armazena as informações de login de um usuário.
+   - **Propriedades**:
+     - `name`: Nome do usuário.
+     - `email`: Email do usuário.
+     - `senha`: Senha do usuário.
+   - **Métodos**:
+     - `LoginInfo(String name, String email, String senha)`: Construtor da classe LoginInfo.
+
+### Relacionamentos Entre Classes
+
+- **Lk10Shop** é a classe principal que coordena a interação entre as outras classes. Ela gerencia o fluxo do programa desde a tela inicial até o login, registro, seleção de produtos, doação e finalização da compra.
+- **Cliente** é instanciado após o login ou registro e armazena as informações do usuário e seu pedido atual.
+- **Pedido** está associado a **Cliente** e contém os produtos que o cliente selecionou para compra.
+- **Produto** é utilizado para representar os itens que podem ser adicionados ao pedido.
+- **LoginInfo** é usado para armazenar e recuperar as informações de login dos usuários.
+
+### Fluxo de Interação
+
+1. O programa inicia exibindo a tela inicial, onde o usuário pode escolher entre fazer login, registrar-se ou sair.
+2. Se o usuário optar por registrar-se, ele insere seu nome, email e senha, que são salvos em um arquivo JSON.
+3. Se o usuário optar por fazer login, ele seleciona um nome de usuário da lista de usuários registrados e, ao ser autenticado, é saudado com uma mensagem de boas-vindas.
+4. O usuário pode então selecionar produtos para adicionar ao seu pedido. Cada produto adicionado é registrado no objeto `Pedido` associado ao `Cliente`.
+5. O usuário tem a opção de doar um valor para o estado do Rio Grande do Sul. Se fizer uma doação, o valor total das doações é atualizado.
+6. Ao finalizar a compra, é gerada uma nota fiscal que pode incluir o valor da doação. Esta nota fiscal é salva em um arquivo de log associado ao cliente.
+7. A nota fiscal é exibida para o usuário com uma animação de confirmação.
+
+Este sistema, através de suas classes e métodos, permite que usuários registrem suas informações, façam compras e doações, e recebam uma confirmação detalhada de suas transações, garantindo uma experiência de usuário organizada e segura.
