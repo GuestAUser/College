@@ -7,7 +7,7 @@ também deixa tudo registrado para maior segurança.
 Os requisitos ja foram desenhados pelo fato de eu ja ter implementado esta idea antes para outros usos além de acadêmicos mas ainda pedi informações sobre isso para o chatgpt, comparando com os meus própios  
 desenhos.
 
-**Meus desenhos dos requisitos:**
+## Meus desenhos dos requisitos:
 
 *Tela Inicial*
 
@@ -64,7 +64,7 @@ desenhos.
     Descrição: Exibir a nota fiscal gerada após a compra.
     Importância: Deixa o usuário em questão com maior segurança no sistema desenvolvido e com uma animação deixa a experiência geral melhor.  
 
-# Desenho da A.I
+## Desenho da A.I
 
 Requisitos Funcionais:
 
