@@ -63,3 +63,46 @@ desenhos.
 
     Descrição: Exibir a nota fiscal gerada após a compra.
     Importância: Deixa o usuário em questão com maior segurança no sistema desenvolvido e com uma animação deixa a experiência geral melhor.
+
+**Desenho da A.I**
+
+Requisitos Funcionais:
+
+    *Login e Registro de Usuário:*
+        Os usuários podem fazer login com credenciais previamente registradas.
+        Novos usuários podem se registrar fornecendo nome, email e senha.
+
+    *Interface de Início:*
+        Exibe opções para Login, Registro e Saída do programa.
+
+    *Seleção de Produtos:*
+        Após o login, exibe uma lista de produtos disponíveis com botões para cada um.
+        Cada botão permite adicionar produtos ao carrinho especificando a quantidade.
+
+    *Finalização da Compra:*
+        Permite ao usuário finalizar a compra após selecionar os produtos desejados.
+        Oferece a opção de fazer uma doação adicional, com validação do valor inserido.
+
+    *Geração de Nota Fiscal:*
+        Após a finalização da compra, gera uma nota fiscal com detalhes dos produtos comprados.
+        Inclui o total da compra e, se aplicável, o valor da doação.
+
+    *Registro de Compras:*
+        Salva todas as notas fiscais geradas em arquivos de log separados por cliente.
+
+    *Atualização de Doações Totais:*
+        Mantém um registro do total de doações feitas por todos os clientes.
+
+    *Exceções e Mensagens de Erro:*
+        Trata casos onde não há usuários registrados ou erros durante o processo de registro/login.
+        Validações para entrada de dados como quantidade de produtos e valores de doação.
+
+Funcionalidades Adicionais:
+
+    Registro de Log de Atividades:
+        Registra atividades importantes, como login bem-sucedido, compras realizadas e doações feitas.
+
+    Interface Gráfica usando Lanterna:
+        Utiliza a biblioteca Lanterna para construir uma interface textual interativa.
+
+Chatgpt: "Este esboço de requisitos funcionais é baseado no código fornecido e cobre as principais funcionalidades necessárias para automatizar o processo de compra em um sistema de e-commerce simplificado."
