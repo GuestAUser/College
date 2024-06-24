@@ -113,12 +113,12 @@ Como podemos ver a a.i mesmo sendo fornecida com o própio código do projeto ai
 
 ## Descrição Textual do Diagrama de Classes do Sistema
 
-O sistema é uma aplicação de gerenciamento de loja virtual, desenvolvida com uma interface de texto utilizando a biblioteca Lanterna. O programa permite que os usuários se registrem, façam login, realizem compras e doações, e gera uma nota fiscal ao final da compra. Abaixo está uma descrição detalhada das classes, propriedades e métodos que compõem o sistema, explicando como elas se relacionam para resolver o problema.
+O sistema em si é uma aplicação de gerenciamento de loja virtual online, desenvolvida com uma interface de texto que usa a biblioteca Lanterna e o compilador Gradle (O jeito mais facil de imitar a interface que eu desenvolvi em python). O programa permite que os usuários se registrem, façam login, realizem compras e doações, e gera uma nota fiscal ao final da compra.
 
 ### Classes Principais
 
 1. **Lk10Shop**
-   - **Descrição**: Classe principal do programa que gerencia a lógica da interface de usuário e interações principais.
+   - **Descrição**: Classe principal que gerencia a lógica da interface de usuário e interações principais.
    - **Propriedades**:
      - `logger`: Logger utilizado para registrar atividades do sistema.
      - `DONATION_FILE`: Nome do arquivo que armazena o total de doações.
@@ -138,7 +138,7 @@ O sistema é uma aplicação de gerenciamento de loja virtual, desenvolvida com 
      - `main(String[] args)`: Método principal que inicializa a aplicação.
 
 2. **Cliente**
-   - **Descrição**: Representa um cliente da loja.
+   - **Descrição**: Representa um cliente da loja (Usuário).
    - **Propriedades**:
      - `nome`: Nome do cliente.
      - `email`: Email do cliente.
@@ -176,8 +176,8 @@ O sistema é uma aplicação de gerenciamento de loja virtual, desenvolvida com 
 
 ### Relacionamentos Entre Classes
 
-- **Lk10Shop** é a classe principal que coordena a interação entre as outras classes. Ela gerencia o fluxo do programa desde a tela inicial até o login, registro, seleção de produtos, doação e finalização da compra.
-- **Cliente** é instanciado após o login ou registro e armazena as informações do usuário e seu pedido atual.
+- **Lk10Shop** classe principal que coordena a interação entre as outras classes. Ela gerencia o fluxo do programa desde a tela inicial até o login, registro, seleção de produtos, doação e finalização da compra.
+- **Cliente** Se instancia após o login ou registro e armazena as informações do usuário e seu pedido atual.
 - **Pedido** está associado a **Cliente** e contém os produtos que o cliente selecionou para compra.
 - **Produto** é utilizado para representar os itens que podem ser adicionados ao pedido.
 - **LoginInfo** é usado para armazenar e recuperar as informações de login dos usuários.
