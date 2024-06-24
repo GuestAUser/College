@@ -191,5 +191,3 @@ O sistema em si é uma aplicação de gerenciamento de loja virtual online, dese
 5. O usuário tem a opção de doar um valor para o estado do Rio Grande do Sul. Se fizer uma doação, o valor total das doações é atualizado.
 6. Ao finalizar a compra, é gerada uma nota fiscal que pode incluir o valor da doação. Esta nota fiscal é salva em um arquivo de log associado ao cliente.
 7. A nota fiscal é exibida para o usuário com uma animação de confirmação.
-
-Este sistema, através de suas classes e métodos, permite que usuários registrem suas informações, façam compras e doações, e recebam uma confirmação detalhada de suas transações, garantindo uma experiência de usuário organizada e segura.
