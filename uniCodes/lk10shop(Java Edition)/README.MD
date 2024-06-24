@@ -64,10 +64,7 @@ desenhos.
     Descrição: Exibir a nota fiscal gerada após a compra.
     Importância: Deixa o usuário em questão com maior segurança no sistema desenvolvido e com uma animação deixa a experiência geral melhor.  
 
-
-
-
-**Desenho da A.I**
+#**Desenho da A.I**
 
 Requisitos Funcionais:
 
