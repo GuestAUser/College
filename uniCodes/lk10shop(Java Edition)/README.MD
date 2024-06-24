@@ -106,3 +106,7 @@ Funcionalidades Adicionais:
         Utiliza a biblioteca Lanterna para construir uma interface textual interativa.
 
 Chatgpt: "Este esboço de requisitos funcionais é baseado no código fornecido e cobre as principais funcionalidades necessárias para automatizar o processo de compra em um sistema de e-commerce simplificado."
+
+## A.I Vs Eu
+
+Como podemos ver a a.i mesmo sendo fornecida com o própio código do projeto ainda sim faltou nos quesitos de detalhes como o user-experience e organização dos dados, mas ainda sim acho muito útil pelo fato de automatizar diversos processos complicados e acaba virando um facilitador imenso para muitos processos, mas não todos.
