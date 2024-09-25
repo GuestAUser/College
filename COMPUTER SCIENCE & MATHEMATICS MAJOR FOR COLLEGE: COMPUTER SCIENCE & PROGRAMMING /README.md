@@ -1,6 +1,6 @@
 # Arquitetura de Redes: Gateway, Roteador e Firewall em Detalhe
 
-Neste documento técnico, exploraremos profundamente os conceitos de **Gateway**, **Roteador** e **Firewall**, destacando suas definições, funcionamentos e inter-relações dentro de uma infraestrutura de rede. Além disso, abordaremos os diferentes tipos de firewalls, complementados por exemplos práticos, códigos de configuração e cálculos relevantes para uma compreensão abrangente.
+Nesta documento, exploro profundamente os conceitos de **Gateway**, **Roteador** e **Firewall**, destacando suas definições, funcionamentos e inter-relações dentro de uma infraestrutura de rede. Além disso, irei abordar os diferentes tipos de firewalls, complementados por exemplos práticos, códigos de configuração e cálculos relevantes para uma compreensão abrangente.
 
 ---
 
@@ -121,16 +121,16 @@ Firewalls são essenciais para:
 **Exemplo de Configuração com iptables:**
 
 ```bash
-# Permitir tráfego HTTP na porta 80
+# Regra += [permitir(tráfego.HTTP:80)]; -> 80 = porta.
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 
-# Bloquear tráfego de um IP específico
+# Bloquear.tráfego(IP); -> { no caso: 203.0.113.5 }
 iptables -A INPUT -s 203.0.113.5 -j DROP
 
-# Permitir tráfego SSH na porta 22
+# Regra += [permitir(tráfego.SSH:22)];
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 
-# Definir política padrão para negar todo o tráfego não especificado
+# Definir(política.padrão).negar<tráfego não especificado?>;
 iptables -P INPUT DROP
 ```
 
@@ -141,16 +141,15 @@ iptables -P INPUT DROP
 **Exemplo de Configuração com iptables:**
 
 ```bash
-# Permitir tráfego de conexões estabelecidas ou relacionadas
 iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-# Permitir novas conexões HTTP
+# Regra += [permitir(tráfego.HTTP:80)];
 iptables -A INPUT -p tcp --dport 80 -m state --state NEW -j ACCEPT
 
-# Permitir novas conexões HTTPS
+# HTTPS;
 iptables -A INPUT -p tcp --dport 443 -m state --state NEW -j ACCEPT
 
-# Bloquear todo o restante
+# Bloquear;
 iptables -P INPUT DROP
 ```
 
@@ -163,7 +162,6 @@ iptables -P INPUT DROP
 Um firewall de aplicação pode analisar requisições HTTP e bloquear tentativas de injeção de SQL:
 
 ```plaintext
-# Exemplo de regra para bloquear padrões suspeitos em URLs
 if (request.url contains "UNION" or request.url contains "SELECT") {
     block();
 }
@@ -176,13 +174,13 @@ if (request.url contains "UNION" or request.url contains "SELECT") {
 **Exemplo de Configuração em Palo Alto Networks (CLI):**
 
 ```plaintext
-# Criar regra para permitir tráfego HTTP
+# Regra += [permitir(tráfego.HTTP)];
 set rulebase security rules "Allow_HTTP" from "trust" to "untrust" source any destination any application "web-browsing" action allow
 
-# Criar regra para negar tráfego Telnet
+# Regra += [negar(tráfego.Telnet)];
 set rulebase security rules "Deny_Telnet" from "trust" to "untrust" source any destination any application "telnet" action deny
 
-# Habilitar inspeção de SSL
+# Habilitar += [inspeção(*SSL)];
 set deviceconfig setting ssl-decryption enable
 ```
 
@@ -228,8 +226,8 @@ Em ambientes de rede modernos, é comum que dispositivos integrem múltiplas fun
 ### Exemplo: Discrepância em Configurações Integradas
 
 ```plaintext
-# Roteador encaminha pacotes para 10.0.0.1
-# Firewall integrado bloqueia os pacotes devido a uma regra excessiva
+# Roteador.encaminha[pacotes] -> ( 10.0.0.1 ).
+# Firewall_integrado - bloqueia(pacotes) devido ( regra excessiva ).
 
 Roteador -> Firewall -> Rede de Destino
 ```
