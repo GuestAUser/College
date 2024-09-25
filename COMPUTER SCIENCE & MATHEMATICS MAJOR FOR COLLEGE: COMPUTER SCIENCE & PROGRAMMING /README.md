@@ -260,6 +260,6 @@ As funções de **Gateway**, **Roteador** e **Firewall** são fundamentais para 
 - **OpenWRT Documentation:** [https://openwrt.org/docs/start](https://openwrt.org/docs/start)
 - **Palo Alto Networks CLI Guide:** [https://docs.paloaltonetworks.com](https://docs.paloaltonetworks.com)
 - **iptables Tutorial:** [https://www.netfilter.org/documentation/HOWTO//packet-filtering-HOWTO.html](https://www.netfilter.org/documentation/HOWTO//packet-filtering-HOWTO.html)
-- **COMPUTER SCIENCE & MATHEMATICS MAJOR FOR COLLEGE: COMPUTER SCIENCE & PROGRAMMING** - *[https://www.unibh.br/](UniBH)*
+- **COMPUTER SCIENCE & MATHEMATICS MAJOR FOR COLLEGE: COMPUTER SCIENCE & PROGRAMMING** - *[UniBh]([UniBH](https://www.unibh.br/))*
 
 ---
