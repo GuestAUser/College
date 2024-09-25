@@ -1,6 +1,6 @@
 # Arquitetura de Redes: Gateway, Roteador e Firewall em Detalhe
 
-Nesta documento, exploro profundamente os conceitos de **Gateway**, **Roteador** e **Firewall**, destacando suas definições, funcionamentos e inter-relações dentro de uma infraestrutura de rede. Além disso, irei abordar os diferentes tipos de firewalls, complementados por exemplos práticos, códigos de configuração e cálculos relevantes para uma compreensão abrangente.
+Neste documento, exploro profundamente os conceitos de **Gateway**, **Roteador** e **Firewall**, destacando suas definições, funcionamentos e inter-relações dentro de uma infraestrutura de rede. Além disso, irei abordar os diferentes tipos de firewalls, complementados por exemplos práticos, códigos de configuração e cálculos relevantes para uma compreensão abrangente.
 
 ---
 
