@@ -161,7 +161,7 @@ iptables -P INPUT DROP
 
 Um firewall de aplicação pode analisar requisições HTTP e bloquear tentativas de injeção de SQL:
 
-```plaintext
+```bash
 if (request.url contains "UNION" or request.url contains "SELECT") {
     block();
 }
@@ -173,7 +173,7 @@ if (request.url contains "UNION" or request.url contains "SELECT") {
 
 **Exemplo de Configuração em Palo Alto Networks (CLI):**
 
-```plaintext
+```bash
 # Regra += [permitir(tráfego.HTTP)];
 set rulebase security rules "Allow_HTTP" from "trust" to "untrust" source any destination any application "web-browsing" action allow
 
