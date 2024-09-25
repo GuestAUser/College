@@ -50,7 +50,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 # Configurar NAT (Network Address Translation) with ( iptables );
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
-# Rule(tradução->(protocolos.específicos);
+# Rule(tradução->(protocolos.específicos));
 iptables -A FORWARD -p tcp --dport 21 -j ACCEPT  # Permitir FTP
 iptables -A FORWARD -p tcp --dport 80 -j ACCEPT  # Permitir HTTP
 ```
