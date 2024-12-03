@@ -10,7 +10,6 @@ Thank you for respecting the work of the original creator.
 
 """
 
-
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import random
